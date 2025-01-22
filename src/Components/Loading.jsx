@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
+import logogif from '../img/loading.gif'
 
 const LoadingPage = () => {
   const [redirect, setRedirect] = useState(false);
@@ -19,7 +19,7 @@ const LoadingPage = () => {
 
   return (
     <div className="loading-container">
-      <img src="src/img/loading.gif" alt="" />
+      <img src={logogif} alt="" />
       <div class="loader"></div>
     </div>
   );

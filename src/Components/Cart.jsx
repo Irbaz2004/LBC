@@ -38,10 +38,10 @@ const CartPage = () => {
 
     emailjs
       .sendForm(
-        "service_lcqv959",
+        "service_rslxdkn",
         "template_cxk6ryf",
         form.current,
-        "S8K3--flBHMyhLpC9"
+        "MjL5Pfz0eAneD01Ry"
       )
       .then(
         () => {

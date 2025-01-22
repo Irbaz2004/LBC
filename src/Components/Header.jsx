@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import logo from '../img/logo black.png'
 
 export function DesktopNavbar() {
   const [bodycolor, setbodycolor] = useState("white");
@@ -69,7 +70,7 @@ export function DesktopNavbar() {
             className="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none"
           >
             <img
-              src="src/img/logo black.png"
+              src={logo}
               className="mt-5"
               width={"70"}
               height={"70"}

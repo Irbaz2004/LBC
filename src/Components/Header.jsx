@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import logo from '../img/logo black.png'
+import whitelogo from '../img/logo white.png'
 
 export function DesktopNavbar() {
   const [bodycolor, setbodycolor] = useState("white");
@@ -321,7 +322,7 @@ export function MobileNavbar() {
     <>
       <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-          <img src="src/img/logo white.png" width={"70"} height={"70"} alt="" />
+          <img src={whitelogo} width={"70"} height={"70"} alt="" />
           <div className="display">
             <Link to={"/cart"}>
               <button type="button" class="btn  me-2">
